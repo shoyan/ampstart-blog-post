@@ -10,6 +10,7 @@ paginate:	5 # The number of posts to show per page on your homepage
 
 permalink: /blog/:year/:month/:day/:title/
 category_dir: blog/categories
+destination: docs
 
 twitter_username: jekyllrb
 github_username:  jekyll
