@@ -4,8 +4,8 @@ email: your-email@domain.com
 description: >
   Awesome site description here
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/ample" # the subpath of your site, e.g. /blog
+url: "http://shoyan.github.io/" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 permalink: /blog/:year/:month/:day/:title/
