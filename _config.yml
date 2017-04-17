@@ -4,12 +4,11 @@ email: your-email@domain.com
 description: >
   Awesome site description here
 
-baseurl: "/ample" # the subpath of your site, e.g. /blog
-url: "http://shoyan.github.io/" # the base hostname & protocol for your site
-
-destination: docs
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
 twitter_username: jekyllrb
-github_username:  jekyll
 
 markdown: kramdown
+
+google_analytics: ""
