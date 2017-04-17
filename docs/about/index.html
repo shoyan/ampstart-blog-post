@@ -3,7 +3,7 @@
   <head>
   <meta charset="utf-8">
   <title>About</title>
-  <link rel="canonical" href="http://localhost:4000/ample/about/">
+  <link rel="canonical" href="https://shoyan.github.io/ample/about/">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 
   
@@ -11,17 +11,17 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="Awesome site description here
 ">
-  <link rel="alternate" type="application/rss+xml" title="Awesome Site Title" href="http://localhost:4000/ample/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Awesome Site Title" href="https://shoyan.github.io/ample/feed.xml">
 
   <script type="application/ld+json">
   
 {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://localhost:4000/ample/about/",
+  "mainEntityOfPage": "https://shoyan.github.io/ample/about/",
   "headline": "About",
-  "datePublished": "2017-04-17T11:35:02+09:00",
-  "dateModified": "2017-04-17T11:35:02+09:00",
+  "datePublished": "2017-04-17T11:48:17+09:00",
+  "dateModified": "2017-04-17T11:48:17+09:00",
   "description": "Awesome site description here
 ",
   "author": {
@@ -33,14 +33,14 @@
     "name": "Awesome Site Title",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:4000/ample",
+      "url": "https://shoyan.github.io/ample",
       "width": "60",
       "height": "60"
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://localhost:4000/ample",
+    "url": "https://shoyan.github.io/ample",
     "height": "60",
     "width": "60"
   }
@@ -1791,11 +1791,28 @@ h1 + .ampstart-byline time {
   <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
   <script custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js" async=""></script>
   <script custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js" async=""></script>
-
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>
 
 
   <body>
+    
+      <amp-analytics type="googleanalytics" id="amp-analytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": ""
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
     
 
     <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">

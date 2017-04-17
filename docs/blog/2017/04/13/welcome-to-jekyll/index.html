@@ -3,21 +3,21 @@
   <head>
   <meta charset="utf-8">
   <title>Welcome to Jekyll!</title>
-  <link rel="canonical" href="http://localhost:4000/ample/blog/2017/04/13/welcome-to-jekyll/">
+  <link rel="canonical" href="https://shoyan.github.io/ample/blog/2017/04/13/welcome-to-jekyll/">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 
   
 
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
-  <link rel="alternate" type="application/rss+xml" title="Awesome Site Title" href="http://localhost:4000/ample/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Awesome Site Title" href="https://shoyan.github.io/ample/feed.xml">
 
   <script type="application/ld+json">
   
 {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://localhost:4000/ample/blog/2017/04/13/welcome-to-jekyll/",
+  "mainEntityOfPage": "https://shoyan.github.io/ample/blog/2017/04/13/welcome-to-jekyll/",
   "headline": "Welcome to Jekyll!",
   "datePublished": "2017-04-13T10:33:58+09:00",
   "dateModified": "2017-04-13T10:33:58+09:00",
@@ -31,14 +31,14 @@
     "name": "Awesome Site Title",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:4000/ample",
+      "url": "https://shoyan.github.io/ample",
       "width": "60",
       "height": "60"
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://localhost:4000/ample",
+    "url": "https://shoyan.github.io/ample",
     "height": "60",
     "width": "60"
   }
@@ -1789,11 +1789,28 @@ h1 + .ampstart-byline time {
   <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
   <script custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js" async=""></script>
   <script custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js" async=""></script>
-
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>
 
 
   <body>
+    
+      <amp-analytics type="googleanalytics" id="amp-analytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": ""
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
     
 
     <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
@@ -1852,13 +1869,11 @@ h1 + .ampstart-byline time {
 
 <p>Jekyll also offers powerful support for code snippets:</p>
 
-<figure class="highlight">
-  <pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre>
-</figure>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
 <p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 

@@ -3,21 +3,21 @@
   <head>
   <meta charset="utf-8">
   <title>This post demonstrates post content styles</title>
-  <link rel="canonical" href="http://localhost:4000/ample/blog/2016/05/20/this-post-demonstrates-post-content-styles/">
+  <link rel="canonical" href="https://shoyan.github.io/ample/blog/2016/05/20/this-post-demonstrates-post-content-styles/">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 
   
 
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultri...">
-  <link rel="alternate" type="application/rss+xml" title="Awesome Site Title" href="http://localhost:4000/ample/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Awesome Site Title" href="https://shoyan.github.io/ample/feed.xml">
 
   <script type="application/ld+json">
   
 {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://localhost:4000/ample/blog/2016/05/20/this-post-demonstrates-post-content-styles/",
+  "mainEntityOfPage": "https://shoyan.github.io/ample/blog/2016/05/20/this-post-demonstrates-post-content-styles/",
   "headline": "This post demonstrates post content styles",
   "datePublished": "2016-05-20T00:00:00+09:00",
   "dateModified": "2016-05-20T00:00:00+09:00",
@@ -31,14 +31,14 @@
     "name": "Awesome Site Title",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:4000/ample",
+      "url": "https://shoyan.github.io/ample",
       "width": "60",
       "height": "60"
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://localhost:4000/ample",
+    "url": "https://shoyan.github.io/ample",
     "height": "60",
     "width": "60"
   }
@@ -1789,11 +1789,28 @@ h1 + .ampstart-byline time {
   <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
   <script custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js" async=""></script>
   <script custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js" async=""></script>
-
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>
 
 
   <body>
+    
+      <amp-analytics type="googleanalytics" id="amp-analytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": ""
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
     
 
     <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
