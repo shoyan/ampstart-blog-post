@@ -1,5 +1,9 @@
 /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -63,6 +67,30 @@ code,kbd,samp {
   font-family: monospace,monospace;
   font-size: 1em
 }
+pre,
+code {
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
 
 dfn {
   font-style: italic
