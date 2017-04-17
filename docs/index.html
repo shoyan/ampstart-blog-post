@@ -20,8 +20,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://localhost:4000/ample/",
   "headline": "Awesome Site Title",
-  "datePublished": "2017-04-13T14:35:16+09:00",
-  "dateModified": "2017-04-13T14:35:16+09:00",
+  "datePublished": "2017-04-17T11:19:28+09:00",
+  "dateModified": "2017-04-17T11:19:28+09:00",
   "description": "Awesome site description here
 ",
   "author": {
@@ -103,6 +103,26 @@ b, strong {
 code, kbd, samp {
   font-family: monospace,monospace;
   font-size: 1em; }
+
+pre,
+code {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #f7f7f7; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+ol > li {
+  margin: 1em 0; }
 
 dfn {
   font-style: italic; }
@@ -1070,7 +1090,8 @@ main {
 
 p {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 2rem; }
 
 .ampstart-subtitle {
   color: #4f4f4f;
@@ -1080,8 +1101,7 @@ p {
   color: #003f93; }
 
 #content {
-  # margin-top: calc(0px - 3.5rem);
-  padding-top: 3.5rem; }
+  padding-top: calc(0px - 3.5rem); }
 
 .ampstart-card {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
@@ -1821,77 +1841,85 @@ h1 + .ampstart-byline time {
     <main class="content" role="main">
 
   <header class="blog-header">
-      <h2 class="blog-description">Awesome site description here
+      <h2 class="blog-description py2">Awesome site description here
 </h2>
   </header>
 
   <div class="cf frame">
     
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      <article class="post my4" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
           <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="/ample/blog/2017/04/13/welcome-to-jekyll/" itemprop="url">Welcome to Jekyll!</a></h2>
+            <h2 class="post-title my2" itemprop="name"><a class="text-decoration-none" href="/ample/blog/2017/04/13/welcome-to-jekyll/" itemprop="url">Welcome to Jekyll!</a></h2>
           </header>
+
+          <div class="post-meta my2">
+            <time datetime="2017-04-13T10:33:58+09:00">13 April 2017</time>
+          </div>
+
           <section class="post-excerpt" itemprop="description">
             <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 
           </section>
 
-          <div class="post-meta">
-            <time datetime="2017-04-13T10:33:58+09:00">13 April 2017</time>
-          </div>
         </div>
       </article>
     
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      <article class="post my4" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
           <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="/ample/blog/2017/04/05/sample/" itemprop="url">Ginger Strawberry Spritzer</a></h2>
+            <h2 class="post-title my2" itemprop="name"><a class="text-decoration-none" href="/ample/blog/2017/04/05/sample/" itemprop="url">Ginger Strawberry Spritzer</a></h2>
           </header>
+
+          <div class="post-meta my2">
+            <time datetime="2017-04-05T00:00:00+09:00">05 April 2017</time>
+          </div>
+
           <section class="post-excerpt" itemprop="description">
             <amp-img src="/ample/assets/images/blog/spritzer.jpg" width="1280" height="853" layout="responsive" alt="The final spritzer" class="mb4 mx3"></amp-img>
 
 
           </section>
 
-          <div class="post-meta">
-            <time datetime="2017-04-05T00:00:00+09:00">05 April 2017</time>
-          </div>
         </div>
       </article>
     
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      <article class="post my4" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
           <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="/ample/blog/2016/05/20/this-post-demonstrates-post-content-styles/" itemprop="url">This post demonstrates post content styles</a></h2>
+            <h2 class="post-title my2" itemprop="name"><a class="text-decoration-none" href="/ample/blog/2016/05/20/this-post-demonstrates-post-content-styles/" itemprop="url">This post demonstrates post content styles</a></h2>
           </header>
+
+          <div class="post-meta my2">
+            <time datetime="2016-05-20T00:00:00+09:00">20 May 2016</time>
+          </div>
+
           <section class="post-excerpt" itemprop="description">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.</p>
 
 
           </section>
 
-          <div class="post-meta">
-            <time datetime="2016-05-20T00:00:00+09:00">20 May 2016</time>
-          </div>
         </div>
       </article>
     
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      <article class="post my4" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
           <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="/ample/blog/2016/05/20/my-example-post/" itemprop="url">My Example Post</a></h2>
+            <h2 class="post-title my2" itemprop="name"><a class="text-decoration-none" href="/ample/blog/2016/05/20/my-example-post/" itemprop="url">My Example Post</a></h2>
           </header>
+
+          <div class="post-meta my2">
+            <time datetime="2016-05-20T00:00:00+09:00">20 May 2016</time>
+          </div>
+
           <section class="post-excerpt" itemprop="description">
             <p>Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse postulant assentior est in, no choro sadipscing repudiandae vix. Vis in euismod delenit dignissim. Ex quod nostrum sit, suas decore animal id ius, nobis solet detracto quo te.</p>
 
 
           </section>
 
-          <div class="post-meta">
-            <time datetime="2016-05-20T00:00:00+09:00">20 May 2016</time>
-          </div>
         </div>
       </article>
     

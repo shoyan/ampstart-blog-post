@@ -102,6 +102,26 @@ code, kbd, samp {
   font-family: monospace,monospace;
   font-size: 1em; }
 
+pre,
+code {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #f7f7f7; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+ol > li {
+  margin: 1em 0; }
+
 dfn {
   font-style: italic; }
 
@@ -1068,7 +1088,8 @@ main {
 
 p {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 2rem; }
 
 .ampstart-subtitle {
   color: #4f4f4f;
@@ -1078,8 +1099,7 @@ p {
   color: #003f93; }
 
 #content {
-  # margin-top: calc(0px - 3.5rem);
-  padding-top: 3.5rem; }
+  padding-top: calc(0px - 3.5rem); }
 
 .ampstart-card {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
@@ -1817,7 +1837,7 @@ h1 + .ampstart-byline time {
 
 
     <main id="content" role="main" class="">
-  <article class="recipe-article">
+  <article class="article">
      <span class="ampstart-accent block px3 pt2 mb2">FOOD</span>
      <h1 class="mb1 px3">This post demonstrates post content styles</h1>
 
