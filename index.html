@@ -5,23 +5,25 @@ layout: default
 <main class="content" role="main">
 
   <header class="blog-header">
-      <h2 class="blog-description">{{ site.description }}</h2>
+      <h2 class="blog-description py2">{{ site.description }}</h2>
   </header>
 
   <div class="cf frame">
     {% for post in paginator.posts %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      <article class="post my4" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
           <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+            <h2 class="post-title my2" itemprop="name"><a class="text-decoration-none" href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
           </header>
+
+          <div class="post-meta my2">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+
           <section class="post-excerpt" itemprop="description">
             {{ post.excerpt }}
           </section>
 
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-          </div>
         </div>
       </article>
     {% endfor %}

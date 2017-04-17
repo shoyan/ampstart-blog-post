@@ -89,8 +89,9 @@ pre {
   }
 }
 
-
-
+ol > li {
+  margin: 1em 0;
+}
 
 dfn {
   font-style: italic
@@ -1357,7 +1358,8 @@ main {
 
 p {
   padding: 0;
-  margin: 0
+  margin: 0;
+  margin-bottom: 2rem
 }
 
 .ampstart-subtitle {
@@ -1370,8 +1372,7 @@ p {
 }
 
 #content {
-  # margin-top: calc(0px - 3.5rem);
-  padding-top: 3.5rem
+  padding-top: calc(0px - 3.5rem);
 }
 
 .ampstart-card {
