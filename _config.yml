@@ -6,18 +6,10 @@ description: >
 
 baseurl: "/ample" # the subpath of your site, e.g. /blog
 url: "http://shoyan.github.io/" # the base hostname & protocol for your site
-paginate:	5 # The number of posts to show per page on your homepage
 
-permalink: /blog/:year/:month/:day/:title/
-category_dir: blog/categories
 destination: docs
 
 twitter_username: jekyllrb
 github_username:  jekyll
 
 markdown: kramdown
-kramdown:
-  parse_block_html: true
-
-gems:
-  - jekyll-paginate
