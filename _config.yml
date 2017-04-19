@@ -11,7 +11,10 @@ paginate: 5
 gems:
   - jekyll-paginate
 
-twitter_username: jekyllrb
+twitter_username: "#"
+facebook_username: "#"
+instagram_username: "#"
+pinterest_username: "#"
 
 markdown: kramdown
 
