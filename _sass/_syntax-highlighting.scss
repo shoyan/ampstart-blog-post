@@ -3,9 +3,10 @@
  */
 .highlight {
     background: #fff;
+    margin: 1em 40px;
 
     .highlighter-rouge & {
-      background: #eef;
+      background: #f7f7f7;
     }
 
     .c     { color: #998; font-style: italic } // Comment
