@@ -16,7 +16,7 @@ layout: default
             <h2 class="post-title my2" itemprop="name"><a class="text-decoration-none" href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
           </header>
 
-          <div class="post-meta my2 px3">
+          <div class="post-meta my2">
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
           </div>
 
@@ -29,7 +29,7 @@ layout: default
     {% endfor %}
   </div>
 
-  <nav class="pagination my2 px3" role="navigation">
+  <nav class="pagination my2" role="navigation">
     {% if paginator.next_page %}
       <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
     {% else %}
