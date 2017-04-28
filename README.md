@@ -4,7 +4,9 @@ ampstart-blog-post is [ampstart.com](https://www.ampstart.com/) jekyll theme.
 
 [Theme preview](https://shoyan.github.io/ampstart-blog-post/)
 
-![ampstart-blog-post theme preview](/screenshot.png)
+<a href="https://shoyan.github.io/ampstart-blog-post/">
+<img src="/screenshot.png" width="360" height="640" alt="ampstart-blog-post theme preview">
+</a>
 
 ## Installation
 
