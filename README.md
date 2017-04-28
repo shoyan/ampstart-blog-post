@@ -1,8 +1,10 @@
 # ampstart-blog-post
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+ampstart-blog-post is [ampstart.com](https://www.ampstart.com/) jekyll theme.
 
-TODO: Delete this and the text above, and describe your gem
+[Theme preview](https://shoyan.github.io/ampstart-blog-post/)
+
+![ampstart-blog-post theme preview](/screenshot.png)
 
 ## Installation
 
@@ -26,10 +28,76 @@ Or install it yourself as:
 
     $ gem install ampstart-blog-post
 
-## Usage
+## Writing Posts with AMP
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+Writing posts works
+[just like it does normally in Jekyll](https://jekyllrb.com/docs/posts/)
+except when you want to include extra resources likes pictures, videos,
+embedded Twitter posts, etc.
 
+AMP has it's own set of special html tags for including content. You
+should use these instead of normal Markdown or HTML tags.
+
+The two you are are most likely to need are `<amp-img>` and `<amp-youtube>`:
+
+### Images in your posts
+
+```
+<amp-img width="600" height="300" layout="responsive" src="/assets/images/your_picture.jpg"></amp-img>
+```
+
+### Youtube Videos in your posts
+
+```
+<amp-youtube data-videoid="lBTCB7yLs8Y" layout="responsive" width="480" height="270"></amp-youtube>
+```
+
+### Embedding other types of content
+
+The AMP Project provides helpers for many other types of content like audio,
+ads, Google Analytics, etc.
+
+* Built-in AMP tags:
+ * https://github.com/ampproject/amphtml/blob/master/builtins/README.md
+
+* Extended AMP tags:
+ * https://github.com/ampproject/amphtml/blob/master/extensions/README.md
+
+## Validating your page with AMP
+
+AMP adds built-in validation logic to make sure your pages follow all
+the rules so they render as fast as possible.
+
+To check your page, just add `#development=1` to any url on your site and then
+check the javascript console in your browser.
+
+http://localhost:4000/#development=1
+
+You will either see a success message:
+
+```
+Powered by AMP ⚡ HTML – Version 1457112743399
+AMP validation successful.
+```
+
+Or you will see a list of errors to fix:
+
+```
+Powered by AMP ⚡ HTML – Version 1457112743399
+AMP validation had errors:
+The attribute 'style' may not appear in tag 'span'
+The attribute 'style' may not appear in tag 'div'
+```
+
+### Enabling Google Analytics
+
+To enable Google Anaytics, add the following lines to your Jekyll site:
+
+```yaml
+  google_analytics: UA-NNNNNNNN-N
+```
+
+Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
