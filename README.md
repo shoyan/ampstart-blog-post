@@ -1,4 +1,4 @@
-# ample
+# ampstart-blog-post
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
@@ -9,13 +9,13 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "ample"
+gem "ampstart-blog-post"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: ample
+theme: ampstart-blog-post
 ```
 
 And then execute:
@@ -24,7 +24,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ample
+    $ gem install ampstart-blog-post
 
 ## Usage
 

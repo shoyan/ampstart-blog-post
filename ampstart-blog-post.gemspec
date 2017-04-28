@@ -1,13 +1,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "ample"
+  spec.name          = "ampstart-blog-post"
   spec.version       = "0.1.0"
   spec.authors       = ["Shohei Yamasaki"]
   spec.email         = ["yamasaki0406@gmail.com"]
 
   spec.summary       = %q{A jekyll theme using AMP}
-  spec.homepage      = "https://github.com/shoyan/ample"
+  spec.homepage      = "https://github.com/shoyan/ampstart-blog-post"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
