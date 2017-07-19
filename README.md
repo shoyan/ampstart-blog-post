@@ -20,10 +20,10 @@ cd ampstart-blog-post
 Step 2: Run bundle install
 
 ```
-$ bundle insatll
+bundle insatll
 ```
 
-Step 3: Edit _config.yml
+Step 3: Edit `_config.yml`
 
 Just fill in everything in the # Site settings section. You'll want to set your site's title, your name, your twitter username, etc.
 
@@ -36,6 +36,10 @@ bundle exec jekyll server
 Step 5: Access your browse
 
 http://localhost:4000/
+
+Step 6: Publish your site
+
+[just like any other Jekyll site](https://jekyllrb.com/docs/deployment-methods/).
 
 ## Writing Posts with AMP
 
