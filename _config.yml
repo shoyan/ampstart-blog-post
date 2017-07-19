@@ -19,3 +19,11 @@ pinterest_username: "#"
 markdown: kramdown
 
 google_analytics: ""
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - ampstart-blog-post.gemspec
+  - docs
+  - LICENSE.txt
+  - README.md
