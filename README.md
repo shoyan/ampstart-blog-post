@@ -10,25 +10,32 @@ ampstart-blog-post is [ampstart.com](https://www.ampstart.com/) jekyll theme.
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+Step1: Clone this repo to your computer
 
-```ruby
-gem "ampstart-blog-post"
+```
+git clone git@github.com:shoyan/ampstart-blog-post.git
+cd ampstart-blog-post
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+Step 2: Run bundle install
 
-```yaml
-theme: ampstart-blog-post
+```
+$ bundle insatll
 ```
 
-And then execute:
+Step 3: Edit _config.yml
 
-    $ bundle
+Just fill in everything in the # Site settings section. You'll want to set your site's title, your name, your twitter username, etc.
 
-Or install it yourself as:
+Step 4: Run server
 
-    $ gem install ampstart-blog-post
+```
+bundle exec jekyll server
+```
+
+Step 5: Access your browse
+
+http://localhost:4000/
 
 ## Writing Posts with AMP
 
